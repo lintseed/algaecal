@@ -288,35 +288,6 @@ var handlebars = require('gulp-handlebars');
 var wrap = require('gulp-wrap');
 var declare = require('gulp-declare');
 
-// ### gulp template-cache
-gulp.task('template-cache', function() {
-  return gulp.src(project.html)
-    .pipe(handlebars({
-      handlebars: require('handlebars')
-    }))
-    .pipe(wrap('Handlebars.template(<%= contents %>)'))
-    .pipe(declare({
-      namespace   : 'PESAPP.templateCache',
-      noRedeclare : true
-    }))
-    .pipe(wrap('/* jshint ignore:start */\n<%= contents %>'))
-    .pipe(concat('template-cache.js'))
-    .pipe(gulp.dest(path.source + 'scripts'));
-});
-
-// ### Override gulp scripts
-gulp.task('scripts', ['jshint', 'template-cache'], function() {
-  var merged = merge();
-  manifest.forEachDependency('js', function(dep) {
-    merged.add(
-      gulp.src(dep.globs, {base: 'scripts'})
-        .pipe(jsTasks(dep.name))
-    );
-  });
-  return merged
-    .pipe(writeToManifest('scripts'));
-});
-
 // ### Override gulp watch
 gulp.task('watch', function() {
   browserSync.init({

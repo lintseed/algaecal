@@ -1,9 +1,15 @@
-// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+// @import "http://netdna.bootstrapcdn.com/font-awesome/5.0.0/fonts";
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import "../samplesite/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 @import "common/normalize";
-@import "common/fonts";
 @import "common/variables";
+@import "common/fonts";
+@import "common/site";
 @import "common/global";
+@import "common/buttons";
 // @import "components/buttons";
 // @import "components/comments";
 // @import "components/forms";

@@ -1,0 +1,64 @@
+.btn, .button, .dropdown-menu>li a.btn {
+  background-image: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 0;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0 1.37511em;
+  font-size: 1.2375rem;
+  line-height: 2.38989;
+  border-radius: .25rem;
+  -webkit-transition: background-color 0.2s ease-in-out,-webkit-box-shadow 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out,-webkit-box-shadow 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out,box-shadow 0.1s ease-in-out,transform 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out,box-shadow 0.1s ease-in-out,transform 0.1s ease-in-out,-webkit-box-shadow 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #40ad4a;
+  border-color: #358f3d;
+
+  -webkit-box-shadow: 0 8px 0 #358f3d, 0 8px 6px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 0 #358f3d, 0 8px 6px rgba(0,0,0,0.35);
+  text-shadow: 0 -1px 1px rgba(41,41,44,0.35);
+
+
+}
+.btn-success{
+  -webkit-box-shadow: 0 8px 0 #358f3d, 0 8px 6px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 0 #358f3d, 0 8px 6px rgba(0,0,0,0.35);
+  text-shadow: 0 -1px 1px rgba(41,41,44,0.35);
+}
+.btn-seal {
+  position: relative;
+  padding-left: 62px;
+  text-align: center;
+  img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+  }
+}
+.btn-lg {
+  font-size: 150%;
+}
+.btn-go:after {
+    content: '\25BA';
+    line-height: 1;
+    margin: 0 -.5em 0 .5em;
+    position: relative;
+    right: auto;
+    top: .1em;
+}

@@ -1,139 +1,349 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>AlgaeCal Sample Landing Page</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/styles/main.css">
+  <link rel="stylesheet" href="dist/styles/main.css">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="dist/scripts/main.js"></script>
 </head>
-
 <body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <div class="container">
+    <header>
+      <div class="logo" id="branding">
+        <a href="https://www.algaecal.com/" title="AlgaeCal" rel="home" target="_blank">
+          <span class="sr-only">AlgaeCal</span>
+        </a>
+      </div>
+      <div id="phoneLink">
+        <a class="text-primary js-trackable-phone-number" href="tel:+18008200184">
+          <h3 class="font-weight-bold text-body">Tap to Talk <span id="phone" class="text-info"></span></h3>
+          <p id="phoneDisplay" class="phone lead" style="display: none;"><i class="fa fa-phone bg-success text-white rounded-circle pull-left" aria-hidden="true"></i> Speak to our Bone Health Specialists!</p>
+        </a>
+      </div>
+    </header>
+  </div><!-- / end container -->
 
-  <header>
-    AlgaeCal
-  <header>
-
-  <p>Tap to Talk 1-800-820-0184</p>
-  img ?
-  <p>Build brand new bone WITHIN 6 MONTHS with this rare algae calcium ...even if you're 85!</p>
-
-  <script src="//fast.wistia.com/embed/medias/cecdwaq3dz.jsonp" async></script>
-  <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-  <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cecdwaq3dz videoFoam=true " style="height:100%;width:100%">&nbsp;</div></div></div>
-
-
-  <div class="well">
-    20% off sticker
-    <h3>3 Month Supply</h3>
-    4 AlgaeCal Plus
-    3 Strontium Boost
-    < img >
-    $233 USD
-    Only $2.58/Day!
-    <a href="#" class="btn btn-guarantee">Add to Cart</a>
-  </div>
-
-  <div class="well highlight">
-    35% off sticker
-    Most Popular
-    <h3>6 Month Supply</h3>
-    8 AlgaeCal Plus
-    6 Strontium Boost
-    < img >
-    $337 USD
-    Only $2.09/Day!
-    <a href="#" class="btn btn-guarantee">Add to Cart</a>
-  </div>
-
-  <div class="well">
-    38% off sticker
-    Most Popular
-    <h3>12 Month Supply</h3>
-    16 AlgaeCal Plus
-    12 Strontium Boost
-    < img >
-    $717 USD
-    Only $1.97/Day!
-    <a href="#" class="btn btn-guarantee">Add to Cart</a>
-  </div>
-
-  AlgaeCal Plus
-  Supplement Facts
-
-  Strontium Boost
-  Supplement Facts
-
-
-  <section class="guarantee vsl-guarantee d-md-block d-none ">
+  <section id="bg-fancy" class="text-bold text-white text-center lead">
     <div class="container">
-      <div class="background">
-        <div class="content">
-          <div class="row">
-            <div class="col-md-12 col-lg-3 text-center badge">
-              <img src="" data-src="https://www.algaecal.com/sp/assets/img/guarantee_seal.png" alt="Algaecal 7 years guarantee" class="img-fluid lazy">
+      <div class="d-flex align-items-center pt-1">
+        <div class="flex-fill sr-hidden border-top border-top-2 border-white"></div>
+        <h2 class="px-2 text-center text-white text-uppercase">INTRODUCING</h2>
+        <div class="flex-fill sr-hidden border-top border-top-2 border-white"></div>
+      </div>
+      <h2 class="text-white text-left">The ONLY Calcium Supplement that <big>Increases Bone Density<sup>*</sup></big> ...or Your Money Back</h2>
+    </div><!-- / end container -->
+  </section>
+
+  <div class="container">
+    <main>
+
+      <section class="lead">
+        <h3 class="text-black text-normal margin-sm-top margin-md-bottom">Build <strong>brand new bone</strong> WITHIN 6 MONTHS with this <strong>rare algae</strong> calcium ...even if you're 85!</h3>
+      </section>
+
+      <script src="https://fast.wistia.com/embed/medias/cecdwaq3dz.jsonp" async></script>
+      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+      <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cecdwaq3dz videoFoam=true " style="height:100%;width:100%">&nbsp;</div></div></div>
+      <script>
+      window._wq = window._wq || [];
+      _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
+        video.bind("secondchange", function() {
+          if (video.secondsWatched() >= 2.13) {
+            $('#bundles').show('slow');
+          }
+        });
+      }});
+      </script>
+
+      <section id="bundles" class="margin-lg-top" style="display: none;">
+
+        <div class="row">
+
+          <div id="bundle-1" class="bundle product-1 col-xs-12 col-lg-4">
+            <div class="product-box-wrapper box-shadow text-center">
+              <div class="percent-off text-bold box-shadow">
+                <div class="label"><span class="amount">20%</span>OFF</div>
+              </div>
+              <div class="product-box">
+                <div class="product-box-header">
+                  <h4 class="bundle-product-name text-black">3 Month Supply</h4>
+                  <h5 class="bundle-product-description text-info text-normal">4 AlgaeCal Plus<br>3 Strontium Boost</h5>
+                </div>
+                <div class="product-box-content">
+                  <div class="product-image">
+                    <img src="dist/images/bottles_3month.jpg" class="img-responsive text-center" alt="">
+                  </div>
+                  <div class="price lead">
+                    <strong><sup>$</sup>233 <sup class="currency">USD</sup></strong>
+                  </div>
+                  <div class="yellow-highlight">
+                    Only <span class="amount currency"><sup>$</sup><strong>2.58</strong>/Day!</span>
+                  </div>
+                  </div>
+                </div>
+                <div class="product-box-footer">
+                  <a href="https://www.algaecal.com/product/bone-builder-packs/" target="_blank" class="btn btn-success btn-go text-white btn-seal text-bold">
+                    <img src="dist/images/guarantee_seal.png" alt="Algaecal 7 years guarantee" class="seal">Add to Cart</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="col-md-12 col-lg-9 text">
-              <h2>Stronger Bones For 7 Years Guarantee</h2>
-              <p>When you follow directions for use of AlgaeCal Plus and Stronium Boost - we guarantee you will see increased bone density in EVERY follow-up DXA scan you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund, no questions asked! <a data-toggle="modal" data-target="#guarantee">Click Here For Details</a>
-              </p>
+
+          <div id="bundle-2" class="bundle product-2 col-xs-12 col-lg-4 offset-md-2">
+            <div class="product-box-wrapper box-shadow text-center">
+                <h5 class="normal text-center text-white">MOST POPULAR</h5>
+                <div class="inner-bg box-shadow">
+                  <div class="percent-off text-bold box-shadow">
+                    <div class="label"><span class="amount">35%</span>OFF</div>
+                  </div>
+                  <div class="product-box">
+                    <div class="product-box-header">
+                      <h4 class="bundle-product-name text-black">6 Month Supply</h4>
+                      <h5 class="bundle-product-description text-info text-normal">8 AlgaeCal Plus<br>6 Strontium Boost</h5>
+                    </div>
+                    <div class="product-box-content">
+                      <div class="product-image">
+                        <img src="dist/images/bottles_6month.jpg" class="img-responsive text-center" alt="">
+                      </div>
+                      <div class="price lead">
+                        <strong><sup>$</sup>337 <sup class="currency">USD</sup></strong>
+                      </div>
+                      <div class="yellow-highlight">
+                        Only <span class="amount currency"><sup>$</sup><strong>2.09</strong>/Day!</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="product-box-footer">
+                      <a href="https://www.algaecal.com/product/bone-builder-packs/" target="_blank" class="btn btn-success btn-go text-white btn-seal text-bold">
+                        <img src="dist/images/guarantee_seal.png" alt="Algaecal 7 years guarantee" class="seal">Add to Cart</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          <div id="bundle-3" class="bundle product-3 col-xs-12 col-lg-4 offset-md-2">
+            <div class="product-box-wrapper box-shadow text-center">
+              <div class="percent-off text-bold box-shadow">
+                <div class="label"><span class="amount">38%</span>OFF</div>
+              </div>
+              <div class="product-box">
+                <div class="product-box-header">
+                  <h4 class="bundle-product-name text-black">12 Month Supply</h4>
+                  <h5 class="bundle-product-description text-info text-normal">16 AlgaeCal Plus<br>12 Strontium Boost</h5>
+                </div>
+                <div class="product-box-content">
+                  <div class="product-image">
+                    <img src="dist/images/bottles_12month.jpg" class="img-responsive text-center" alt="">
+                  </div>
+                  <div class="price lead">
+                    <strong><sup>$</sup>717 <sup class="currency">USD</sup></strong>
+                  </div>
+                  <div class="yellow-highlight">
+                    Only <span class="amount currency"><sup>$</sup><strong>1.97</strong>/Day!</span>
+                  </div>
+                  </div>
+                </div>
+                <div class="product-box-footer">
+                  <a href="https://www.algaecal.com/product/bone-builder-packs/" target="_blank" class="btn btn-success btn-go text-white btn-seal text-bold">
+                    <img src="dist/images/guarantee_seal.png" alt="Algaecal 7 years guarantee" class="seal">Add to Cart</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+        </div><!-- / row -->
+      </section><!-- / end bundles -->
+
+      <section id="facts">
+        <h4 class="text-black text-center">AlgaeCal Plus</h4>
+        <div class="panel panel-facts">
+          <div class="panel-content">
+            <h3 class="text-center">Supplement Facts</h3>
+            <ul class="text-bold list-unstyled">
+              <li>4 Capsules Per Day</li>
+              <li>Servings Per Container: 22</li>
+            </ul>
+            <div class="supplement-facts algaecal-plus border-top-lg">
+              <div class="row amount-per-serving border-btm-md">
+                <div class="col-sm-8 col-xs-8">Amount Per Serving</div>
+                <div class="col-sm-4 col-xs-4 text-right">%DV</span></div>
+              </div>
+              <div class="row text-bold">
+                <div class="col-sm-8 col-xs-8">
+                  Vitamin C<br>
+                  <small>(as calcium ascorbate)</small>
+                </div>
+                <div class="col-sm-4 col-xs-4 text-right">84%</div>
+              </div>
+              <div class="row text-bold">
+                <div class="col-sm-8 col-xs-8">
+                  Vitamin D3 1600 IU<br>
+                  <small>(as cholecalciferol)</small>
+                </div>
+                <div class="col-sm-4 col-xs-4 text-right">400%</div>
+              </div>
+              <div class="row text-bold">
+                <div class="col-sm-8 col-xs-8">
+                  Vitamin K2100 mcg<br>
+                  <small>(as menaquinone-7)</small>
+                </div>
+                <div class="col-sm-4 col-xs-4 text-right">126%</div>
+              </div>
+              <div class="row text-bold">
+                <div class="col-sm-8 col-xs-8">
+                  Calcium 720 mg<br>
+                  <small>(from algas calcareas)</small>
+                </div>
+                <div class="col-sm-4 col-xs-4 text-right">72%</div>
+              </div>
+              <div class="row text-bold border-btm-lg">
+                <div class="col-sm-8 col-xs-8">
+                  Magnesium 350 mg<br>
+                  <small>(from algas calcareas and magnesium oxide)</small>
+                </div>
+                <div class="col-sm-4 col-xs-4 text-right">88%</div>
+              </div>
+              <div class="row text-bold padding-sm-top padding-sm-bottom">
+                Boron 3.0 mg*<br>
+                <small>(as glycinate)</small>
+              </div>
+              <div class="row text-bold border-top-lg padding-sm-top">
+                <small>*Daily Value (DV) not established</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-black text-center">Strontium Boost</h4>
+        <div class="panel panel-facts">
+          <div class="panel-content">
+            <h3 class="text-center">Supplement Facts</h3>
+            <ul class="text-bold list-unstyled">
+              <li>2 Capsules Per Day</li>
+              <li>Servings Per Container: 30</li>
+            </ul>
+            <div class="supplement-facts algaecal-plus border-top-lg ">
+              <div class="row amount-per-serving border-btm-md">
+                <div class="col-sm-8 col-xs-8">Amount Per Serving</div>
+                <div class="col-sm-4 col-xs-4 text-right"></span></div>
+              </div>
+              <div class="row text-bold">
+                <div class="col-sm-8 col-xs-8">
+                  Strontium<br>
+                  <small>(from Strontium Citrate)</small>
+                </div>
+                <div class="col-sm-4 col-xs-4 text-right">680 mg*</div>
+              </div>
+              <div class="row text-bold border-top-lg padding-sm-top">
+                <small>*Daily Value (DV) not established</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- / end supplement facts -->
+
+
+      <section id="guarantee" class="guarantee vsl-guarantee d-m d-none ">
+        <div class="panel panel-background">
+          <div class="panel-content">
             <div class="row">
-              <div class="col-md-4">
-                <img src="" data-src="https://www.algaecal.com/sp/assets/img/signature.png" alt="Dean Signature" class="lazy d-none d-md-inline-block w-100 mt-5" width="179" height="40" />
-                <hr class="d-none d-md-block">
+              <div class="col-xs-12 col-lg-3 text-center">
+                <img src="dist/images/guarantee_seal.png" alt="Algaecal 7 years guarantee" class="img-responsive text-center">
               </div>
-              <div class="col-md-3">
-                <img src="" data-src="https://www.algaecal.com/sp/assets/img/dean-face.jpg" alt="Dean Neuls" class="lazy rounded-circle w-100 d-none d-md-block">
-                <img src="" data-src="https://www.algaecal.com/sp/assets/img/dean-face.jpg" alt="Dean Neuls" class="lazy rounded-circle w-50 d-md-none d-block mx-auto">
-                <img src="" data-src="https://www.algaecal.com/sp/assets/img/signature.png" alt="Dean Signature" class="lazy d-block d-md-none w-75 mx-auto mt-1 mb-0" />
-                <hr class="d-block d-md-none">
-              </div>
-              <div class="col-md-5">
-                <p class="mt-3"><strong>Dean Neuls</strong>,<br> CEO and Co-Founder, AlgaeCal inc.</p>
+              <div class="col-xs-12 col-lg-9 text">
+                <h4 class="text-warning">Stronger Bones For 7 Years Guarantee</h4>
+                <p>
+                  When you follow directions for use of AlgaeCal Plus and Stronium Boost - we guarantee you will see increased bone density in EVERY follow-up DXA scan you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund, no questions asked!
+                  <span data-toggle="modal" data-target="#myModal" class="link-info text-info">Click Here For Details</a>
+                </p>
               </div>
             </div>
+            <div class="row author">
+              <div class="col-xs-12 col-md-3 text-center">
+                <img src="assets/images/dean-face.jpg" alt="Dean Neuls" class="rounded-circle text-center"><br>
+                <img src="dist/images/signature.png" alt="Dean Signature"  class="text-center">
+                <hr>
+              </div>
+              <div class="col-xs-12 col-md-4 text-center" style="margin: auto;">
+                <p class="justify"><strong>Dean Neuls</strong>,<br>CEO and Co-Founder,<br>AlgaeCal inc.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="guarantee vsl-guarantee d-md-block d-none ">
-    <div class="container">
-      <div class="background">
-        <div class="content">
-          <div class="row">
-            As Seen On:
-
+      <section id="seen" class="box-shadow guarantee">
+        <div class="panel panel-default">
+          <div class="panel-heading bg-success-dark text-center"><h5 class="text-white text-bold">As Seen On:</h5></div>
+          <div class="panel-body text-center">
+            <img src="assets/images/logo_oz.jpg" alt="oz">
+            <img src="assets/images/logo_fox.jpg" alt="fox news">
+            <img src="assets/images/logo_pbs.jpg" alt="pbs">
+            <img src="assets/images/logo_amazon.jpg" alt="Amazon">
+            <img src="assets/images/logo_young.jpg" alt="forever young">
+            <img src="assets/images/logo_yourbones.jpg" alt="your bones">
           </div>
+        </div>
+      </section>
+
+      <section id="refs" class="margin-lg-top">
+        <h5 class="text-primary">Scientific References</h5>
+        <ol>
+          <li>Marques A. Ferreira RJ, Santos E, et al. The accuracy of osteoporotic fracture risk prediction tools: a systematic review and meta-analysis. Ann Rheum Dis. 2015 Nov;74(11):1958-67. doi: 10.1136/annrheumdis-2015-207907. Epub 2015 Aig 6. PMID: 26248637.</li>
+          <li>Riggs BL, Melton LJ 3rd. The worldwide problem of osteoporosis: insights afforded by epidemiology. Bone 1995 Nov;17(5 Suppl):505S-511S. PMID: 8573428</li>
+          <li>https://www.algaecal.com/expert-insights/prescription-drugs-that-cause-osteoporosis/</li>
+        </ol>
+        <a href="#" class="lead">View Full Reference List...</a>
+      </section>
+
+      <section class="text-center margin-lg-top">
+        <a href="#" class="btn btn-success btn-go text-white btn-seal text-bold btn-lg">
+          <img src="dist/images/guarantee_seal.png" alt="Algaecal 7 years guarantee" class="seal">Buy Now</button>
+        </a>
+      </section>
+
+    </main>
+
+    <footer class="text-center margin-lg-top">
+      <div class="logo">
+        <a href="https://www.algaecal.com/" title="AlgaeCal" rel="home" target="_blank">
+          <span class="sr-only">AlgaeCal</span>
+        </a>
+      </div>
+      <ul class="footer list-unstyled">
+        <li><a href="#">Shipping and Returns</a></li>
+        <li><a href="#">Health Disclaimer</a></li>
+        <li><a href="#">Legal and Privacy Policy</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Order Now</a></li>
+      </ul>
+      <p>Copyright &copy; 2018 AlgaeCal</p>
+    </footer>
+  </div><!-- / end container -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body" id="insertContents">
+          <!-- hardcoded to save time -->
+          <h3>Too Good to Be True?</h3> <p>Since no other calcium company, no drug, and no doctor guarantees you will increase bone density even for one year, why should you believe our 7 year guarantee?</p> <p>Because we have been offering this guarantee since 2006. Because 37,169 customers like you have ALREADY built stronger bones&#8230;and only one person didn’t see the results we guarantee!  And because our products are clinically supported to increase bone density over a 7 year period &#8211; they just work.</p> <p>Measurable improvements always appear at 6 months from when you start your AlgaeCal Plus and Strontium Boost program.  So if your next DXA (or DEXA)  scan is scheduled half a year or more from now we guarantee your bone density increase.  You may choose to wait for your next scheduled scan so that it is paid for by your insurance, or you may choose to pay out of pocket to check your results earlier.  Either way is fine for us.  Just allow at least 6 months of taking the products as directed before your follow up scan.</p> <p>In other words, “scan to scan to scan” improvements MUST be yours for the next 7 years!</p> <p><img class="aligncenter size-large wp-image-62567" src="https://www.algaecal.com/wp-content/uploads/osteo-DXA-scan-1024x260.jpg" alt="Osteo DXA Scan" /></p> <h3>How It Works</h3> <p>You need two DXA scans to make this guarantee work.  The first scan needs to be within 30 days of your purchase of AlgaeCal Plus + Strontium Boost. The second scan can be whenever you want, as long as it’s at least 6 months after you start taking the products (and not more than 30 days after you stop).</p> <p>This allows you to measure how well these products increase your bone density when you get your second scan.</p> <h3>What You Need To Do</h3> <ol> <li>Have a DXA scan that is not more than 30 days old to establish a baseline measurement. (If you had a DXA scan more than 30 days ago, your guaranteed period will launch from your next scan onward. So don&#8217;t wait! Get started building healthy new bone right now before your guarantee begins.)</li> <li>Take these two products at full dose as directed for at least six months.</li> <li>Get your follow up DXA scan from the same clinic as your first scan. It doesn&#8217;t matter when… six, twelve, even 24 months after you start – as long as you have continued to use your products between scans.</li> </ol> <p>If your follow up scan does not show an increase in your hip and/or spinal bone density, we refund every penny you paid us between those two scans.</p> <h3>What Happens After 7 Years?</h3> <p>You can repeat this process of increasing bone, guaranteed, from scan to scan, for the next 7 years! (Because our products are clinically supported to increase bone density over a 7 year period.) <strong>At that point, we’ll be happy to repeat the guarantee.</strong> That’s how confident we are that you will see a bone density increase with every subsequent scan!  You are automatically extended!</p> <p>Your satisfaction is also guaranteed for as long as you take our products. Even when you see bone density increases- let us know and we&#8217;ll refund you.</p> <h3>Exceptions</h3> <ol> <li><strong>Current Prescription Drug Use.</strong>  Studies show that a wide range of prescription drugs, including bone drugs, interfere with natural bone density increases.  You may take drugs now that impede AlgaeCal Plus and Strontium Boost from increasing your bone density. To learn if your prescription is excluding you from this guarantee, please call toll free <a class="phone-number js-trackable-phone-number" href="tel:+18008200184">1-800-820-0184</a>.</li> <li><strong>Early Stage Menopause.</strong> If you are in the first five years of menopause, your hormone balance may cause a dramatic drop in bone density.  So even the great nutrients in AlgaeCal Plus and Strontium Boost may not be able to offset the loss. So women in this phase of life are excepted from the Guarantee.<strong>IMPORTANT NOTE:</strong> Even if you fall into one of the guarantee exceptions, AlgaeCal Plus and Strontium Boost is still your smartest choice because it is the ONLY nutrient combination that is clinically supported to increase bone density in adults.  If you are taking medications or are in early menopause, you need every nutritional advantage you can get.  Often, exempted customers STILL increase their bone density!</li> </ol> <div style="text-align: center;" class="bone-7yr-guarantee-video-proof"> <h4 class="video-title">Here&#8217;s video proof</h4> <div class='ac-embed'> <div class='embed-responsive embed-responsive-16by9'><iframe src="https://fast.wistia.net/embed/iframe/oxo4ak3z2d?dnt=1&#038;playButton=false&#038;playerColor=676767&#038;videoFoam=1" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="500" height="281"></iframe><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script></div> </div> </div> <p><strong>Disclaimer:</strong> <em>Guarantee matches 3 clinical studies results.</em> <a href="/research/" target="_blank" rel="noopener noreferrer">View studies.</a></p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  Scientific References
-  < content >
-  <a href="#">View Full Reference List</a>
-  <a href="#" class="btn btn-guarantee">Buy Now</a>
-
-  < logo >
-
-  <footer>
-  Shipping and Returns | Health Disclaimer | Legal and Privacy Policy | Contact | Order Now
-  Copyright &copy; 2017 AlgaeCal
-  </footer>
-
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 </body>
-
 </html>
